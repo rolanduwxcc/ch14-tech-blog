@@ -2,104 +2,104 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    title: 'MVP...er MVC',
+    content: 'Model View Controller. One fat, one short, one lean',
     user_id: 10
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'https://nasa.gov/donec.json',
+    title: 'Postman vs Insomnia',
+    content: 'Hello, come again, and good bye, that is what happens during this battle of routes',
     user_id: 8
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    post_url: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    title: 'JavaScript and Syntactic Sugar',
+    content: 'I feel like old JS coding veterans invented this term b/c they like reading confusing code',
     user_id: 1
   },
   {
-    title: 'Nunc purus.',
-    post_url: 'http://desdev.cn/enim/blandit/mi.jpg',
+    title: 'Blog Post 3',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. ',
     user_id: 4
   },
   {
-    title: 'Pellentesque eget nunc.',
-    post_url: 'http://google.ca/nam/nulla/integer.aspx',
+    title: 'Blog Post 4ish',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.  ',
     user_id: 7
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    post_url: 'https://stanford.edu/consequat.png',
+    title: 'CSS features',
+    content: 'Flexbox, CSS grid, float. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. ',
     user_id: 4
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_url: 'http://edublogs.org/non/ligula/pellentesque.js',
+    title: 'With CSS Grid',
+    content: 'You can create responsive periodic tables of elements. You can make tables of data easily especially if the are formatted from a JSON string. Blog blog blog. ',
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'http://ucla.edu/consequat/nulla.html',
+    title: 'What really happens when using Flexbox',
+    content: 'If flex-basis is 100% under the wrapper element, the element takes up all available space, forces other elements to stack.',
     user_id: 1
   },
   {
-    title: 'Duis ac nibh.',
-    post_url: 'http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx',
+    title: 'Once upon a time...',
+    content: 'There was boy who cried April Fools! Then another who cried May Day!',
     user_id: 9
   },
   {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    post_url: 'https://reverbnation.com/ligula/sit.jpg',
+    title: 'HTML for life',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.  ',
     user_id: 5
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_url: 'http://china.com.cn/lectus/vestibulum.json',
+    title: 'Third Party APIs are the bomb heres why',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.  ',
     user_id: 3
   },
   {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_url: 'http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
+    title: 'Web API Whoas',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 10
   },
   {
-    title: 'Donec dapibus.',
-    post_url: 'https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml',
+    title: 'Web API Hell Yeahs',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 8
   },
   {
-    title: 'Nulla tellus.',
-    post_url: 'https://lycos.com/natoque/penatibus/et.html',
+    title: 'Server-side APIs',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 3
   },
   {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_url: 'https://gmpg.org/lorem.jpg',
+    title: 'Project Week',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 3
   },
   {
     title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    post_url: 'https://paginegialle.it/mattis/egestas.jsp',
+      'Node.js Express.js Sqlite3 MySQL Nodemon dotenv NPM',
+      content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 7
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_url: 'http://wikia.com/turpis/eget.jpg',
+    title: 'Object Oriented Programming',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 6
   },
   {
-    title: 'Etiam justo.',
-    post_url: 'https://shareasale.com/quis.json',
+    title: 'Express.js Train',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 4
   },
   {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    post_url: 'http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png',
+    title: 'Nobody knows the ORM I\'m in',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 6
   },
   {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    post_url: 'https://java.com/at/nibh/in.png',
+    title: 'Project Week Part 2',
+    content: 'Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog. Blog blog blog.',
     user_id: 7
   }
 ];
