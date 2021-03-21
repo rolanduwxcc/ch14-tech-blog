@@ -19,17 +19,20 @@
             <h1 class="col-sm">
                 <a href="/">Tech Blog 2021</a>
             </h1>
-            <nav class="col-sm">
+            <nav class="nav">
+                <a class="nav-link active" aria-current="page" href="/" class="col-sm">Home</a>
+                <a class="nav-link" href="/:id" tabindex="-1">Dashboard</a>
                 {{#if loggedIn}}
-                <button id="logout" class="btn-no-style">logout</button>
+                <button <a class="nav-link" id="logout">logout</button>
                 {{else}}
-                <a href="/login">login</a>
+                <a <a class="nav-link" href="/login">login</a>
                 {{/if}}
             </nav>
         </header>
         <main>
             {{{ body }}}
         </main>
+        <br>
         <footer>
             Thanks for visiting!
         </footer>
