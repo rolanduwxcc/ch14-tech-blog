@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const {Post, User, Comment} = require('../models');
-
+// display all posts to any user
 router.get('/', (req, res) => {
     console.log(req.session);
 
@@ -38,46 +38,9 @@ router.get('/', (req, res) => {
     });
 });
 
-// router.get('/:id', (req, res) => {
-//     console.log(req.session);
 
-//     Post.findAll({
-//         where: {
-//             // id: req.params.id
-//             user_id: 7
-//           },
-//         attributes: [
-//             'id',
-//             'title',
-//             'content',
-//             'created_at'
-//         ],
-//         include: [
-//             {
-//                 model: Comment,
-//                 attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-//                 include: {
-//                     model: User,
-//                     attributes: ['username']
-//                 }
-//             },
-//             {
-//                 model: User,
-//                 attributes: ['username']
-//             }
-//         ]
-//     }).then(dbPostData => {
-//         //pass a single post object into the homepage template
-//         // console.log(dbPostData[0]);
-//         const posts = dbPostData.map(post => post.get({ plain: true }));
-//         res.render('homepage', { posts, loggedIn: req.session.loggedIn });
-//     })
-//     .catch(err => {
-//         console.log(err);
-//         res.status(500).json(err);
-//     });
-// });
 
+// user sees login/signup screen
 router.get('/login', (req,res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -87,6 +50,7 @@ router.get('/login', (req,res) => {
     res.render('login');
 });
 
+// see one post route to potentially edit
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {

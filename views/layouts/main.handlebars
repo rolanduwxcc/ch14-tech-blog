@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Tech Blog 2021</title>
 </head>
 
@@ -21,11 +21,11 @@
             </h1>
             <nav class="nav">
                 <a class="nav-link active" aria-current="page" href="/" class="col-sm">Home</a>
-                <a class="nav-link" href="/:id" tabindex="-1">Dashboard</a>
+                <a class="nav-link" href="/1" tabindex="-1">Dashboard</a>
                 {{#if loggedIn}}
-                <button <a class="nav-link" id="logout">logout</button>
+                <button class="btn-no-style" id="logout">logout</button>
                 {{else}}
-                <a <a class="nav-link" href="/login">login</a>
+                <a class="nav-link" href="/login">login</a>
                 {{/if}}
             </nav>
         </header>
@@ -34,7 +34,7 @@
         </main>
         <br>
         <footer>
-            Thanks for visiting!
+            Made with ❤  by Rolanduwxcc
         </footer>
     </div>
 
@@ -44,6 +44,10 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 
+
+    {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
