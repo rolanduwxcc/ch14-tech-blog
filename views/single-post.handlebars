@@ -2,7 +2,7 @@
     <h5 class="card-header">{{post.title}}</h5>
     <div class="card-body">
         <p class="card-text">{{post.content}}</p>
-
+    </div>
     {{!-- <div class="title card-header">
         <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
         <span>({{post.post_url}})</span>
@@ -11,8 +11,7 @@
         {{post.vote_count}} point(s) by {{post.user.username}} on {{post.created_at}}
         |
         <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-    </div> --}}
-        </div>
+    </div> --}}    
 
 </article>
 
@@ -42,5 +41,4 @@
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}
