@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   //check the session
-  console.log(req.body);
   if (req.session) {
     Comment.create({
       comment_text: req.body.comment_text,
@@ -28,6 +27,7 @@ router.post('/', (req, res) => {
         res.status(400).json(err);
       });
   }
+  console.log('warren did you make it');
 });
 
 // route ---> /api/comments/:id
