@@ -19,7 +19,6 @@ router.post('/', (req, res) => {
       post_id: req.body.post_id,
       //use the id from the session
       user_id: req.session.user_id
-      // user_id: 1
     })
       .then(dbCommentData => res.json(dbCommentData))
       .catch(err => {
